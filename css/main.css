@@ -1,30 +1,6 @@
-/*===========================
-*	[Table of contents]
-* ===========================
-*
-*	01. Body = body
-*	02. Preloader = .preloader
-*	03. Header = #header-area
-*	04. HeaderBottom = #header-bottom
-*	05. Main Menu = .off-canvas-menu
-*	06. About Area = #about-area
-*	07. My Interest Area = #interest-area
-*	08. Education Area = #education-area
-*	09. Skill Area = #pro-skills-area
-*	10. Portfolio Area = #portfolio-area
-*	11. Testinonial Area = #testimonial-area
-*	12. Message Area = #message-area
-*	13. Blog Area = #blog-area
-*	14. Contact Area = #contact-area
-*	15. Footer = #footer-area
-*	
-*	And More Css /css/page.css File Include
-*
-* ============================*/
-
 /*
 ==========================================
-    Theme Reset Css
+    Theme
 ==========================================
 */
 
@@ -252,6 +228,30 @@ body {
     font-size: 84px;
     font-weight: 600;
     margin: 5px 0;
+    margin-left: 4px;
+}
+
+@keyframes blink {
+  0% { color: #6bd0ff; }
+  50% { color: white; }
+  100% { color: #6bd0ff; }
+}
+
+.construct h2 {
+  animation: blink 2s infinite;
+}
+
+.construct h2 {
+    font-size: 50px;
+    position: fixed;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.header-bottom p {
+    margin-left: 9px;
 }
 
 .header-bottom h3 span {
@@ -265,7 +265,7 @@ body {
 }
 
 
-/*Mian Menu CSS*/
+/*Main Menu*/
 
 .off-canvas-menu {
     background-color: rgba(0, 0, 0, 0.9);
@@ -332,9 +332,6 @@ nav.main-menu ul li a:hover {
     top: 30px;
     width: 40px;
 }
-
-
-/*Mian Menu CSS*/
 
 /* ==== Header CSS End ==== */
 
