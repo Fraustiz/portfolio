@@ -269,28 +269,6 @@ body {
     margin-left: 4px;
 }
 
-<<<<<<< Updated upstream
-@keyframes blink {
-  0% { color: #6bd0ff; }
-  50% { color: white; }
-  100% { color: #6bd0ff; }
-}
-
-.construct h2 {
-  animation: blink 2s infinite;
-}
-
-.construct h2 {
-    font-size: 50px;
-    position: fixed;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-}
-
-=======
->>>>>>> Stashed changes
 .header-bottom p {
     margin-left: 9px;
 }
