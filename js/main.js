@@ -74,13 +74,6 @@
             $(".off-canvas-menu").removeClass("active");
         });
 
-        /*----------------
-        Parallax Js Here
-        -----------------*/
-        $('.parallax-header').parallax({
-            imageSrc: 'img/header-bg.jpg'
-        });
-
         /*---------------------
          WOW js Active
         --------------------- */
@@ -203,6 +196,16 @@
 
 
     }); //Ready Function
+
+    const taille = document.getElementById('toggle-menu');
+
+    const rect = taille.getBoundingClientRect();
+
+    const distanceDroite = window.innerWidth - rect.right;
+
+    console.log(distanceDroite);
+
+    // End calc
 
     // All Window Load Function
     jQuery(window).load(function () {
