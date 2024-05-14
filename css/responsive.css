@@ -10,6 +10,20 @@
     .header-bottom p {
         font-size: 25px;
     }
+    .hamburger {
+        margin-top: 10px;
+        margin-right: 50px;
+        size: 50px;
+    }
+    .menu{
+        right: calc(-100%);
+        width: 100%;
+    }
+    .menu ul li a {
+
+        align-items: center;
+        display: flex;
+    }
     .about-thum-area .about-img {
         width: 100%;
     }
@@ -382,6 +396,10 @@
     }
     .header-bottom p {
         font-size: 25px;
+    }
+    .menu {
+        right: calc(-25vw);
+        width: 25vw;
     }
     .resume-btn a {
         margin-left: 90px;
