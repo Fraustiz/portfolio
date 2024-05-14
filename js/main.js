@@ -197,15 +197,17 @@
 
     }); //Ready Function
 
-    const taille = document.getElementById('toggle-menu');
+    // Smooth scrolling
 
-    const rect = taille.getBoundingClientRect();
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
 
-    const distanceDroite = window.innerWidth - rect.right;
-
-    console.log(distanceDroite);
-
-    // End calc
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 
     // All Window Load Function
     jQuery(window).load(function () {

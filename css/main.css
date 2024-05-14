@@ -85,12 +85,12 @@ body {
 }
 
 .section-title {
-    margin-bottom: 85px;
+    margin: 85px;
     text-align: center;
 }
 
 .section-title h2 {
-    background: -webkit-linear-gradient(left, var(--purple), #ffde7b);
+    background: -webkit-linear-gradient(left, var(--purple), var(--yellow));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -991,9 +991,9 @@ nav.main-menu ul li a:hover {
 }
 
 .port-btn-hvr a {
-    border: 1px solid #02cfb4;
+    border: 1px solid var(--purple);
     border-radius: 50%;
-    color: #02cfb4;
+    color: var(--purple);
     display: inline-block;
     font-size: 17px;
     height: 40px;
@@ -1008,7 +1008,7 @@ nav.main-menu ul li a:hover {
 
 .port-btn-hvr a:hover {
     color: #f1f1f1;
-    background-color: #02cfb4;
+    background-color: var(--purple);
 }
 
 .port-meta {
@@ -1028,31 +1028,8 @@ nav.main-menu ul li a:hover {
 }
 
 .port-meta p {
-    color: #02cfb4;
+    color: var(--purple);
     font-weight: 600;
-}
-
-.portfolio-btn {
-    text-align: center;
-}
-
-.portfolio-btn a {
-    background-color: #22252c;
-    border: 1px solid transparent;
-    color: #02cfb4;
-    display: inline-block;
-    font-weight: 600;
-    margin: 50px auto auto;
-    padding: 13px 45px;
-    text-transform: uppercase;
-    -webkit-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-}
-
-.portfolio-btn a:hover {
-    background-color: transparent;
-    border-color: #22252c;
-    color: #22252c;
 }
 
 
@@ -1077,7 +1054,7 @@ nav.main-menu ul li a:hover {
 }
 
 .single-testimonial h3 {
-    color: #02cfb4;
+    color: var(--purple);
     font-weight: 600;
     font-size: 21px;
     margin: 20px 0;
@@ -1118,7 +1095,7 @@ nav.main-menu ul li a:hover {
 }
 
 .testimonail-content .owl-dot {
-    background-color: #02cfb4;
+    background-color: var(--purple);
     border-radius: 50%;
     display: inline-block;
     height: 15px;
@@ -1141,7 +1118,7 @@ nav.main-menu ul li a:hover {
 /* ==== Message CSS Start ==== */
 
 #message-area {
-    background-color: #02cfb4;
+    background-color: var(--purple);
     padding: 60px 0 70px 0;
 }
 
@@ -1191,7 +1168,7 @@ nav.main-menu ul li a:hover {
 .hire-btn a {
     background-color: #22252c;
     border: 1px solid transparent;
-    color: #02cfb4;
+    color: var(--purple);
     display: inline-block;
     float: right;
     font-size: 18px;
@@ -1230,7 +1207,7 @@ nav.main-menu ul li a:hover {
 }
 
 .blog-thum {
-    background-color: #02CFB4;
+    background-color: var(--purple);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1247,7 +1224,7 @@ nav.main-menu ul li a:hover {
 }
 
 .blog-content h4 {
-    color: #02cfb4;
+    color: var(--purple);
     font-size: 18px;
     font-weight: 700;
     line-height: 25px;
@@ -1272,7 +1249,7 @@ nav.main-menu ul li a:hover {
 }
 
 .post-meta a:hover {
-    color: #02cfb4;
+    color: var(--purple);
 }
 
 .blog-content p {
@@ -1283,8 +1260,8 @@ nav.main-menu ul li a:hover {
 }
 
 .readmore-btn {
-    background: -webkit-gradient(linear, left top, right top, from(#02cfb4), to(#02cfa1));
-    background: linear-gradient(to right, #02cfb4, #02cfa1);
+    background: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(#02cfa1));
+    background: linear-gradient(to right, var(--purple), #02cfa1);
     color: #fff;
     display: inline-block;
     font-size: 12px;
@@ -1310,8 +1287,8 @@ nav.main-menu ul li a:hover {
 }
 
 .loadmore-btn {
-    background: -webkit-gradient(linear, left top, right top, from(#02cfb4), to(#02cfa1));
-    background: linear-gradient(to right, #02cfb4, #02cfa1);
+    background: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(#02cfa1));
+    background: linear-gradient(to right, var(--purple), #02cfa1);
     color: #fff;
     display: inline-block;
     font-weight: 600;
@@ -1370,7 +1347,7 @@ nav.main-menu ul li a:hover {
 
 .contact-form button {
     background-color: transparent;
-    color: #02cfb4;
+    color: var(--yellow);
     display: block;
     margin: 50px auto auto;
     padding: 13px 50px;
@@ -1378,24 +1355,24 @@ nav.main-menu ul li a:hover {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     position: relative;
-    -o-border-image: linear-gradient(to right, #17D396, #07F7F7);
-    border-image: -webkit-gradient(linear, left top, right top, from(#17D396), to(#07F7F7));
-    border-image: linear-gradient(to right, #17D396, #07F7F7);
+    -o-border-image: linear-gradient(to right, var(--purple), var(--yellow));
+    border-image: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(var(--yellow)));
+    border-image: linear-gradient(to right, var(--purple), var(--yellow));
     border-image-width: 1px;
     border-image-slice: 1;
 }
 
 .contact-form button:hover {
-    background-color: #17d397;
+    background-color: var(--purple);
     font-weight: 600;
     color: #22252c;
-    -webkit-box-shadow: 0 1px 20px rgba(22, 213, 144, 0.8);
-    box-shadow: 0 1px 20px rgba(22, 213, 144, 0.8);
+    -webkit-box-shadow: 0 1px 20px var(--purple);
+    box-shadow: 0 1px 20px var(--purple);
 }
 
 .contact-form textarea:focus,
 .contact-form input:focus {
-    border-bottom-color: #02cfb4;
+    border-bottom-color: var(--purple);
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1453,7 +1430,7 @@ nav.main-menu ul li a:hover {
 .name-input .name_small span,
 .email-input .email_small span,
 .textarea-input .textarea_small span {
-    color: #02cfb4;
+    color: var(--purple);
     font-size: 11px;
     top: -3px;
 }
@@ -1465,14 +1442,14 @@ nav.main-menu ul li a:hover {
 
 #contactForm .alert.alert-danger {
     background-color: #313741;
-    color: #02cfb4;
+    color: var(--purple);
     font-weight: 300 !important;
     border: none;
     padding: 10px;
 }
 
 #contactForm  .alert-success {
-    color: #00F29A;
+    color: var(--purple);
     background-color: #313741;
     border-color: #313741;
 }
@@ -1485,7 +1462,7 @@ nav.main-menu ul li a:hover {
     margin-right: 40px;
     border-radius: 50%;
     color: #fff;
-    background: #17D397;
+    background: var(--purple);
     opacity: 1;
 }
 
@@ -1514,7 +1491,7 @@ footer#footer-area {
 .footer-icons li a i {
     background-color: #313741;
     border-radius: 50%;
-    color: #02cfb4;
+    color: var(--purple);
     display: table-cell;
     font-size: 22px;
     height: 50px;
@@ -1534,12 +1511,8 @@ footer#footer-area {
 }
 
 .footer-icons li a i:hover {
-    background-color: #02cfb4;
+    background-color: var(--purple);
     color: #22252c;
-}
-
-.copyright-area {
-    color: #02cfb4;
 }
 
 #footer-area hr {
@@ -1561,8 +1534,8 @@ div#scroll {
 }
 
 #scroll a {
-    background: -webkit-gradient(linear, left top, left bottom, from(#17D396), to(#07F7F7));
-    background: linear-gradient(#17D396, #07F7F7);
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--purple)), to(var(--yellow)));
+    background: linear-gradient(var(--purple), var(--yellow));
     border-radius: 50%;
     color: #fff;
     display: inline-block;
@@ -1573,8 +1546,8 @@ div#scroll {
 }
 
 #scroll a:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(#07F7F7), to(#17D396));
-    background: linear-gradient(#07F7F7, #17D396);
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--purple)), to(var(--yellow)));
+    background: linear-gradient(var(--purple), var(--yellow));
     -webkit-transition: 0.4s;
     transition: 0.4s;
 }
@@ -1644,7 +1617,7 @@ body.preloader-active {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #00d7bb;
+    background-color: var(--purple);
     border-radius: 3px;
 }
 
