@@ -6,6 +6,7 @@
 
 :root {
     --purple: #8305FC;
+    --light-purple: #a83dff;
     --yellow: #fcbe05;
 }
 
@@ -89,19 +90,8 @@ body {
     text-align: center;
 }
 
-.section-title h2 {
-    background: -webkit-linear-gradient(left, var(--purple), var(--yellow));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-    font-size: 45px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 .section-title h1 {
-    background: white;
+    background: #ffffff80;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -109,6 +99,17 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: -75px;
+}
+
+.section-title h2 {
+    background: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 
@@ -400,10 +401,9 @@ nav.main-menu ul li a:hover {
 }
 
 .resume-btn a {
-    background: -webkit-gradient(linear, left top, right top, from(#8305FC), to(#5f07f7));
-    background: linear-gradient(to right, var(--purple), var(--yellow));
+    background: #8305FC;
     -webkit-box-shadow: 0 0 20px #8305FC;
-    /* box-shadow: 0 0 20px linear-gradient(to right, var(--purple), var(--yellow)); */
+    box-shadow: 0 0 20px #8305FC;
     color: #fff;
     display: inline-block;
     font-size: 14px;
@@ -443,7 +443,7 @@ nav.main-menu ul li a:hover {
 }
 
 .profile-menu li span {
-    color: #00d7bb;
+    color: var(--purple);
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -472,9 +472,9 @@ nav.main-menu ul li a:hover {
 }
 
 .interest-item i {
-    border: 1px solid #00d7bb;
+    border: 1px solid var(--purple);
     border-radius: 50%;
-    color: #00d7bb;
+    color: var(--purple);
     display: table-cell;
     font-size: 44px;
     height: 90px;
@@ -492,9 +492,8 @@ nav.main-menu ul li a:hover {
 }
 
 .interest-item i:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(#02f3ae), to(#05f6e0));
-    background: linear-gradient(#02f3ae, #05f6e0);
-    border-color: #02f4b7;
+    background: var(--purple);
+    border-color: var(--purple);
     color: #fff;
 }
 
@@ -536,9 +535,9 @@ nav.main-menu ul li a:hover {
 }
 
 .educaton-content::before {
-    border: 2px solid #00d7bb;
+    border: 2px solid var(--purple);
     border-radius: 50%;
-    color: #00d7bb;
+    color: var(--light-purple);
     content: "\f19d";
     font-family: fontawesome;
     font-size: 25px;
@@ -559,11 +558,11 @@ nav.main-menu ul li a:hover {
 }
 
 .educaton-content .cd-timeline::before {
-    background-color: #00d7bb;
+    background-color: var(--purple);
 }
 
 .educaton-content .cd-timeline::after {
-    background-color: #00d7bb;
+    background-color: var(--purple);
     border-radius: 50%;
     bottom: 0;
     content: "";
@@ -584,7 +583,7 @@ nav.main-menu ul li a:hover {
 
 .educaton-content .cd-timeline-img {
     background-color: #313741;
-    border: 2px solid #00d7bb;
+    border: 2px solid var(--purple);
     -webkit-box-shadow: none;
     box-shadow: none;
     height: 35px;
@@ -595,7 +594,7 @@ nav.main-menu ul li a:hover {
 }
 
 .educaton-content .cd-timeline-img span.dot {
-    background-color: #00d7bb;
+    background-color: var(--yellow);
     border-radius: 50%;
     display: block;
     height: 10px;
@@ -624,7 +623,7 @@ nav.main-menu ul li a:hover {
 }
 
 .educaton-content .cd-timeline-content h2 {
-    color: #00d7bb;
+    color: var(--light-purple);
     font-size: 27px;
     font-weight: 700;
     margin-bottom: 5px;
