@@ -931,7 +931,7 @@ nav.main-menu ul li a:hover {
 }
 
 .portfolio-container:after {
-    background: rgba(0, 255, 197, 0.7);
+    background: #8305FCb3;
     position: absolute;
     content: "";
     width: 100%;
@@ -962,6 +962,12 @@ nav.main-menu ul li a:hover {
 .portfolio-single:hover .port-meta {
     bottom: 35px;
     opacity: 1;
+}
+
+.portfolio-thum img {
+    width: 295px;
+    height: 295px;
+    object-fit: cover;
 }
 
 .portfolio-hover {
@@ -1049,159 +1055,6 @@ nav.main-menu ul li a:hover {
 
 
 /* ==== Portfolio Area CSS End ==== */
-
-/* ==== Testinonial Area CSS Start ==== */
-
-#testimonial-area {
-    background-color: #22252c;
-}
-
-.single-testimonial {
-    padding-bottom: 15px;
-    position: relative;
-}
-
-.single-testimonial .client-thum {
-    border-radius: 50%;
-    height: 120px;
-    margin: auto;
-    width: 120px !important;
-}
-
-.single-testimonial h3 {
-    color: var(--purple);
-    font-weight: 600;
-    font-size: 21px;
-    margin: 20px 0;
-}
-
-.single-testimonial p {
-    color: #fff;
-    font-family: "Lora", serif;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 300;
-    line-height: 18px;
-    margin: auto;
-    position: relative;
-    width: 90%;
-}
-
-.single-testimonial p::before {
-    color: #c9c9ca;
-    display: none;
-    content: "\f10d";
-    font-family: FontAwesome;
-    font-size: 22px;
-    left: -20px;
-    position: absolute;
-    top: -5px;
-}
-
-.single-testimonial p::after {
-    top: -5px;
-    color: #c9c9ca;
-    display: none;
-    content: "\f10e";
-    font-family: FontAwesome;
-    font-size: 22px;
-    position: absolute;
-    right: -20px;
-}
-
-.testimonail-content .owl-dot {
-    background-color: var(--purple);
-    border-radius: 50%;
-    display: inline-block;
-    height: 15px;
-    margin: 0 3px;
-    width: 15px;
-}
-
-.testimonail-content .owl-dot.active {
-    background-color: #00f29b;
-}
-
-.testimonail-content .owl-dots {
-    margin-top: 50px;
-    text-align: center;
-}
-
-
-/* ==== Testinonial Area CSS End ==== */
-
-/* ==== Message CSS Start ==== */
-
-#message-area {
-    background-color: var(--purple);
-    padding: 60px 0 70px 0;
-}
-
-.message-content {
-    margin: auto;
-    width: 90%;
-}
-
-.hire-content {
-    float: left;
-    text-align: center;
-    width: 80%;
-}
-
-.hire-content h2 {
-    color: #25292f;
-    display: inline;
-    font-size: 37px;
-    font-weight: 700;
-    padding-left: 90px;
-    position: relative;
-}
-
-.hire-content h2::before {
-    content: "\f1d8";
-    font-family: fontawesome;
-    font-size: 60px;
-    left: 0px;
-    position: absolute;
-    top: 0;
-}
-
-.hire-content p {
-    color: #22252c;
-    font-size: 15px;
-    line-height: 18px;
-    margin: 5px auto 0;
-    padding-left: 90px;
-    width: 80%;
-}
-
-.hire-btn {
-    float: right;
-    width: 20%;
-}
-
-.hire-btn a {
-    background-color: #22252c;
-    border: 1px solid transparent;
-    color: var(--purple);
-    display: inline-block;
-    float: right;
-    font-size: 18px;
-    font-weight: 600;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-    padding: 12px 50px;
-    text-transform: uppercase;
-}
-
-.hire-btn a:hover {
-    background-color: transparent;
-    color: #22252c;
-    border-color: #22252c;
-}
-
-
-/* ==== Message CSS End ==== */
 
 /* ==== Blog CSS Start ==== */
 
@@ -1365,7 +1218,7 @@ nav.main-menu ul li a:hover {
     color: var(--yellow);
     display: block;
     margin: 50px auto auto;
-    padding: 13px 50px;
+    padding: 5px 100px;
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -1451,7 +1304,7 @@ nav.main-menu ul li a:hover {
 }
 
 #contactForm p.help-block {
-    color: #00d7bb;
+    color: #ff7f7f;
     margin-bottom: 0;
 }
 
@@ -1548,34 +1401,95 @@ div#scroll {
     z-index: 999;
 }
 
-#scroll a {
-    background: -webkit-gradient(linear, left top, left bottom, from(var(--purple)), to(var(--yellow)));
-    background: linear-gradient(var(--purple), var(--yellow));
-    border-radius: 50%;
+button {
+    width: 130px;
+    height: 40px;
+    overflow: hidden;
+    border: none;
     color: #fff;
-    display: inline-block;
-    height: 45px;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    width: 45px;
+    background: none;
+    position: relative;
+    padding-bottom: 2em;
+    cursor: pointer;
 }
 
-#scroll a:hover {
-    background: -webkit-gradient(linear, left top, left bottom, from(var(--purple)), to(var(--yellow)));
-    background: linear-gradient(var(--purple), var(--yellow));
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+button > div,
+button > svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
 }
 
-#scroll a i {
-    display: inline-block;
-    font-size: 25px;
-    line-height: 30px;
-    padding: 8px 11.5px;
-    text-align: center;
-    vertical-align: middle;
+button:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
 }
 
+button:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+button .clone > *,
+button .text > * {
+    opacity: 1;
+    font-size: 1.3rem;
+    transition: 0.2s;
+    margin-left: 4px;
+}
+
+button .clone > * {
+    transform: translateY(60px); 
+}
+
+button:hover .clone > * {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+button:hover .text > * {
+    opacity: 1;
+    transform: translateY(-60px);
+    transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+
+button:hover .clone > :nth-child(1) {
+    transition-delay: 0.15s;
+}
+
+button:hover .clone > :nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+button:hover .clone > :nth-child(3) {
+    transition-delay: 0.25s;
+}
+
+button:hover .clone > :nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+button svg {
+    width: 20px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) rotate(-50deg);
+    transition: 0.2s ease-out;
+}
+
+button:hover svg {
+    transform: translateY(-50%) rotate(-90deg);
+}
 
 /* ==== Back To Top CSS End ==== */
 
