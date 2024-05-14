@@ -420,6 +420,11 @@ nav.main-menu ul li a:hover {
     margin: 20px 60px 20px 0;
 }
 
+.profile-menu a {
+    color: #fff;
+    text-decoration: underline;
+}
+
 .profile-menu li {
     color: #fff;
     font-size: 17.5px;
