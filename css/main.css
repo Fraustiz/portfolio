@@ -460,7 +460,6 @@ nav.main-menu ul li a:hover {
 
 #interest-area .section-title {
     margin-bottom: 50px;
-    text-align: left;
 }
 
 #interest-area .section-title h2 {
@@ -1572,7 +1571,7 @@ div#scroll {
     display: inline-block;
     font-size: 25px;
     line-height: 30px;
-    padding: 6px 15px;
+    padding: 8px 11.5px;
     text-align: center;
     vertical-align: middle;
 }
