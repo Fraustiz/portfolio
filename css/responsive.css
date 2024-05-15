@@ -2,13 +2,16 @@
 
 @media only screen and (min-width:320px) {
     .header-bottom h1 {
-        font-size: 80px;
+        font-size: 15vw;
     }
     .header-bottom>h3 {
         font-size: 35px;
     }
     .header-bottom p {
         font-size: 25px;
+    }
+    .header-area{
+        max-width: 100vw;
     }
     .hamburger {
         margin-top: 10px;
@@ -19,16 +22,26 @@
         right: calc(-100%);
         width: 100%;
     }
-    .menu ul li a {
-
-        align-items: center;
+    .menu ul {
         display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+    .menu ul li a {
+        font-size: 6vw;
     }
     .about-thum-area .about-img {
         width: 100%;
     }
     .about-thum-area .about-img:after {
         display: none;
+    }
+    .col-md-offset-1 {
+        margin: 0;
     }
     .resume-btn a {
         margin-left: 0;
@@ -164,6 +177,9 @@
     .about-thum-area .about-img:after {
         display: block;
     }
+    .col-md-offset-1 {
+        margin: 0;
+    }
     .resume-btn a {
         margin-left: 90px;
     }
@@ -272,6 +288,9 @@
     }
     .header-bottom p {
         font-size: 28px;
+    }
+    .col-md-offset-1 {
+        margin: 0;
     }
     .resume-btn a {
         margin-left: 90px;
@@ -400,6 +419,15 @@
     .menu {
         right: calc(-25vw);
         width: 25vw;
+    }
+    .menu ul li a {
+        font-size: 2vw;
+    }
+    .col-md-offset-1 {
+        margin: 0;
+    }
+    .col-md-10 {
+        width: 100%;
     }
     .resume-btn a {
         margin-left: 90px;
