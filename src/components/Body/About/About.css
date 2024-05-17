@@ -1,0 +1,14 @@
+/* About */
+
+.about {
+    height: 100vh;
+    padding: 4em 2em;
+}
+
+.infos {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Fin about */
