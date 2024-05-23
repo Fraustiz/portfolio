@@ -3,7 +3,7 @@
 .navbar {
     position: fixed;
     max-width: initial;
-    width: 100%;
+    width: 100vw;
     height: 6rem;
     background: var(--purple);;
     left: 0;

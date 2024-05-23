@@ -19,21 +19,6 @@
     margin-top: 1.5em;
 }
 
-.info-profile-container {
-    background: linear-gradient(to right, blue, red);
-    background-size: 200% 100%;
-    animation: backgroundShift 2s linear infinite;
-}
-
-@keyframes backgroundShift {
-    0% {
-        background-position: 100% 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-
 .paragraph strong {
     font-weight: bold;
 }
