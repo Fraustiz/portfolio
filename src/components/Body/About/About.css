@@ -1,14 +1,54 @@
-/* About */
+:root {
+    --purple: #8305FC;
+    --light-purple: #a83dff;
+}
 
 .about {
     height: 100vh;
-    padding: 4em 2em;
+    padding: 4em 2em 4em;
 }
 
 .infos {
-    margin-top: 2em;
+    margin-top: 4em;
     display: flex;
     flex-direction: column;
 }
 
-/* Fin about */
+.paragraph {
+    font-size: 1.5rem;
+    margin-top: 1.5em;
+}
+
+.info-profile-container {
+    background: linear-gradient(to right, blue, red);
+    background-size: 200% 100%;
+    animation: backgroundShift 2s linear infinite;
+}
+
+@keyframes backgroundShift {
+    0% {
+        background-position: 100% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.paragraph strong {
+    font-weight: bold;
+}
+
+.info-profile li {
+    margin-top: 1.5em;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.info-profile li span {
+    font-weight: bold;
+    color: var(--purple);
+}
+
+.info-profile li a {
+    color: white;
+}
