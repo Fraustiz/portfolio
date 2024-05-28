@@ -2,7 +2,7 @@ import "./Interest.css"
 
 export const Interest = () => {
     return (
-        <div className="container">
+        <div className="interest">
             <div className="row">
                 <div className="col-md-12">
                     <div className="title">

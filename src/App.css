@@ -18,7 +18,7 @@
 }
 
 body, html {
-    font-family: 'Alpino-Regular', sans-serif;
+    font-family: 'Roboto', sans-serif;
     height: 100%;
     scroll-behavior: smooth;
     max-width: 100%;
@@ -42,7 +42,7 @@ h1, h2, h3, p {
 .title h1 {
     position: absolute;
     font-size: 8em;
-    color: #ffffff83
+    color: #ffffff83;
 }
 
 .title h2 {
