@@ -3,6 +3,7 @@ import * as ReactDOMClient from 'react-dom/client'
 import App from './App'
 import './output.css'
 import './index.css'
+import '../public/css/all.css'
 
 const rootElement = document.getElementById('root');
 if (rootElement) {
