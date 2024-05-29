@@ -15,7 +15,7 @@
 .interest-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-top: 4rem;
 }
 
@@ -47,25 +47,35 @@
 }
 
 .interest-circle {
-    border: 2px solid white;
     border-radius: 50%;
 }
 
 .interest-circle:hover img {
     display: block;
-    animation: fadeIn 0.2s ease-in-out;
+    animation: fadeInZoom 0.5s ease-in-out forwards;
 }
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+
+@keyframes fadeInZoom {
+    0% { opacity: 0; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1.5); }
+}
+
+@keyframes zoomOut {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.5); }
 }
 
 .interest-circle:hover i {
     background: none;
-    opacity: 0.75;
+    opacity: 0;
 }
 
 .interest-box p {
     margin-top: 10px;
     font-size: 2rem;
+    transition: transform 0.5s ease;
+}
+
+.interest-circle:hover + p {
+    transform: translateY(150%);
 }
