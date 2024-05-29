@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.11",
     "caniuse-lite": "^1.0.30001621",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.6",
