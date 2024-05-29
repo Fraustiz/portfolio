@@ -6,7 +6,7 @@ export const About = () => {
             <div className="infos">
                 <div className="title transition-bg">
                     <h1><i className="fa-regular fa-address-card"></i></h1>
-                    <h2>À propos de moi</h2>
+                    <h2>À propos</h2>
                 </div>
                 <p className="paragraph">Bonjour, je suis <strong>Jules Drevon,</strong> développeur Web Full Stack passionné de programmation depuis le collège je suis à la recherche d'une alternance et rentre en première année dans l'institut G4 de Lyon. Je sais coder en HTML5, CSS3, PHP, JavaScript, TypeScript et SQL.</p>
                 <div className="info-profile-container">

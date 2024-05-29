@@ -1,0 +1,71 @@
+:root {
+    --purple: #8305fc;
+    --light-purple: #a83dff;
+    --dark-purple: #461276;
+}
+
+.interest {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    width: 100vh;
+    height: 100%;
+}
+
+.interest-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+.interest-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interest-circle img {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    display: none;
+    z-index: -1;
+}
+
+.interest-box i {
+    font-size: 5rem;
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--purple);
+    border-radius: 50%;
+}
+
+.interest-circle {
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.interest-circle:hover img {
+    display: block;
+    animation: fadeIn 0.2s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.interest-circle:hover i {
+    background: none;
+    opacity: 0.75;
+}
+
+.interest-box p {
+    margin-top: 10px;
+    font-size: 2rem;
+}

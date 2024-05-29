@@ -1,10 +1,13 @@
 :root {
     --purple: #8305FC;
-    --light-purple: #a83dff;
+    --light-purple: #b088d6;
+    --not-white: #f5e2d7;
 }
 
 .about {
-    height: 100vh;
+    height: 50vh;
+    max-width: 100vw;
+    width: 100vh;
     padding: 4em 2em 4em;
 }
 
@@ -31,9 +34,13 @@
 
 .info-profile li span {
     font-weight: bold;
-    color: var(--purple);
+    color: var(--light-purple);
 }
 
 .info-profile li a {
     color: white;
+}
+
+.info-profile li a:hover {
+    text-decoration: underline;
 }

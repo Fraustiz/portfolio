@@ -45,7 +45,7 @@ table {
 }
 
 #root {
-    width: 100vw;
+    width: 100vh;
     height: 100vh;
 }
 
@@ -54,11 +54,6 @@ html {
 }
 
 /* Root */
-
-::selection {
-    background-color: var(--purple);
-}
-
 :root {
     --purple: #8305FC;
     --light-purple: #a83dff;
