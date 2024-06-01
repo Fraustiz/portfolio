@@ -1,4 +1,5 @@
 "use client";
+import React from 'react';
 import { ReactNode } from "react";
 import { cn } from "../../utils/cn";
 
@@ -18,9 +19,10 @@ export const AuroraBackground = ({
     <main>
       <div
         className={cn(
-          "fixed flex flex-col h-[100vh] justify-center",
+          "flex flex-col h-[100vh] justify-center",
           className
         )}
+
         {...props}
       >
         <div className="absolute inset-0 overflow-hidden">

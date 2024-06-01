@@ -3,13 +3,9 @@ import "./Interest.css"
 export const Interest = () => {
     return (
         <div className="interest">
-            <div className="row">
-                <div className="col-md-12">
-                    <div className="title">
-                        <h1><i className="fa-solid fa-dungeon"></i></h1>
-                        <h2>Centres d'intérêts</h2>
-                    </div>
-                </div>
+            <div className="title">
+                <h1><i className="fa-solid fa-dungeon"></i></h1>
+                <h2>Centres d'intérêts</h2>
             </div>
             <div className="interest-content">
                 <div className="interest-box">

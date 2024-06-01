@@ -57,8 +57,8 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    right: calc(-100vw);
-    height: 100vh;
+    right: -100vw;
+    height: 100dvh;
     width: 100vw;
     background-color: #29292b;
     transition: right 0.3s ease;
@@ -81,7 +81,7 @@
 .menu ul li a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 8vw;
+    font-size: 4rem; /* Taille de texte ajustée pour les écrans PC */
 }
 
 .hamburger input {
@@ -123,4 +123,16 @@
     right: 0;
 }
 
-/* Fin hamburger menu */
+#toggle-menu:checked ~ body {
+    overflow-y: hidden;
+}
+
+@media (min-width: 768px) {
+    .menu ul {
+        padding: 2rem;
+    }
+
+    .menu ul li a {
+        font-size: 3rem;
+    }
+}

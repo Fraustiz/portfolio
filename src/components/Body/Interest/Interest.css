@@ -91,14 +91,11 @@
         transition: transform 0.5s ease;
     }
 
-    .interest-box:hover {
-        transform: scale(1.5);
-    }
 
     .interest-circle img {
         position: absolute;
-        width: 12rem;
-        height: 12rem;
+        width: 15rem;
+        height: 15rem;
         border-radius: 50%;
         display: none;
         z-index: -1;
@@ -106,8 +103,8 @@
 
     .interest-box i {
         font-size: 5rem;
-        width: 12rem;
-        height: 12rem;
+        width: 15rem;
+        height: 15rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -120,9 +117,13 @@
         border-radius: 50%;
     }
 
-    .interest-circle:hover img {
+    .interest-box:hover img {
         display: block;
         animation: fadeInZoom 0.5s ease-in-out forwards;
+    }
+
+    .interest-box:hover {
+        transform: scale(1.5);
     }
 
     .interest-circle:hover i {
@@ -151,12 +152,8 @@
     height: 100%;
     position: absolute;
     z-index: 1;
-    animation: slide 5s infinite;
+    animation: slide 4s infinite linear;
     background: linear-gradient(to right, rgba(255,255,255,0) 10%, rgba(255,255,255,0.8) 50%, rgba(128,186,232,0) 80%, rgba(125,185,232,0) 100%);
-}
-
-.interest-box:hover i:after {
-    animation: none;
 }
 
 @keyframes slide {
