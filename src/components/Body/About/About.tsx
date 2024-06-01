@@ -27,11 +27,9 @@ export const About = () => {
                     <div className="content-img">
                         <img src="./images/jules.png" alt="Moi" style={{ backgroundColor }} />
                     </div>
-
                     <div className="text-content">
-                        <p className="paragraph">Bonjour, je m'appelle <strong>Jules Drevon,</strong> développeur Web Full Stack passionné de programmation depuis le collège, je suis à la recherche d'une alternance et rentre en première année dans l'institut G4 de Lyon. Je sais coder en HTML5, CSS3, PHP, JavaScript, TypeScript et SQL.</p>
+                        <p className="paragraph">Jules Drevon, passionné de programmation depuis le collège et actuellement en première année à l'institut G4 de Lyon.<br/>Développeur Web Full Stack à la recherche d'une alternance, maîtrisant les langages HTML5, CSS3, PHP, JavaScript, TypeScript et SQL.</p>
                         <div className="info-profile-container">
-
                             <ul className="info-profile">
                                 <li><span>Nom: </span> Jules DREVON--VINCENT</li>
                                 <li><span>Date de naissance: </span> 24 Août 2003</li>

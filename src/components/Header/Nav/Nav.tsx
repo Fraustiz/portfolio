@@ -40,9 +40,8 @@ export const Nav = () => {
                                     <li><a href="#about" onClick={handleLinkClick}>À propos</a></li>
                                     <li><a href="#studies" onClick={handleLinkClick}>Parcours</a></li>
                                     <li><a href="#" onClick={handleLinkClick}>Expériences</a></li>
-                                    <li><a href="#" onClick={handleLinkClick}>Contact</a></li>
-                                    <li><a href="#" onClick={handleLinkClick}>Langages</a></li>
                                     <li><a href="#" onClick={handleLinkClick}>Portfolio</a></li>
+                                    <li><a href="#" onClick={handleLinkClick}>Contact</a></li>
                                 </ul>
                             </nav>
                         </label>

@@ -11,10 +11,11 @@
 }
 
 .content-img img {
-    width: 25rem;
-    height: 25rem;
-    border-radius: 20%;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50px;
     background-color: random;
+    box-shadow:  17px 17px 14px #202021, -17px -17px 14px #323235;
 }
 
 .content {
@@ -23,6 +24,9 @@
 }
 
 .text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 
@@ -37,8 +41,11 @@
 
 @media (min-width: 769px) {
     .content-img {
+        display: flex;
+        justify-content: center;
         min-width: 35%;
-        width: 50%;
+        width: 100%;
+
     }
 
     .text-content {
