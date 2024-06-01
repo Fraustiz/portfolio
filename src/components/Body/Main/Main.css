@@ -47,6 +47,9 @@
 
 .loader-div {
     height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .dev h2 {
