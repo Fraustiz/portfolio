@@ -1,19 +1,14 @@
-import { useEffect, useState } from 'react';
-import "./About.css"
+import { useEffect } from 'react';
+import "./About.css";
 
 export const About = () => {
-
-
-    const generateRandomColor = () => {
-        const randomColor = `#${Math.floor(Math.random()*16777215).toString(16)}`;
-        return randomColor;
-    };
-
-    const [backgroundColor, setBackgroundColor] = useState('#ffffff');
-
     useEffect(() => {
-        const color = generateRandomColor();
-        setBackgroundColor(color);
+        const contentImg = document.querySelector('.content-img') as HTMLElement;
+
+        if (contentImg) {
+            const randomBorderColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            contentImg.style.setProperty('--random-border-color', randomBorderColor);
+        }
     }, []);
 
     return (
@@ -25,7 +20,7 @@ export const About = () => {
                 </div>
                 <div className="content">
                     <div className="content-img">
-                        <img src="./images/jules.png" alt="Moi" style={{ backgroundColor }} />
+                        <img src="./images/jules.png" alt="Moi" />
                     </div>
                     <div className="text-content">
                         <p className="paragraph">Jules Drevon, passionné de programmation depuis le collège et actuellement en première année à l'institut G4 de Lyon.<br/>Développeur Web Full Stack à la recherche d'une alternance, maîtrisant les langages HTML5, CSS3, PHP, JavaScript, TypeScript et SQL.</p>
