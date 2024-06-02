@@ -1,6 +1,30 @@
+import { useEffect, useRef, useState } from 'react';
 import "./Interest.css"
 
 export const Interest = () => {
+
+    const audioRef = useRef<HTMLAudioElement>(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const togglePlay = () => {
+        const audio = audioRef.current;
+        if (audio) {
+            if (audio.paused) {
+                audio.play();
+                setIsPlaying(true);
+            } else {
+                audio.pause();
+                setIsPlaying(false);
+            }
+        }
+    };
+
+    useEffect(() => {
+        if (audioRef.current) {
+            audioRef.current.volume = 0.5;
+        }
+    }, []);
+
     return (
         <div className="interest">
             <div className="title">
@@ -25,6 +49,14 @@ export const Interest = () => {
                 <div className="interest-box" id="music">
                     <div className="interest-circle">
                         <img src="./images/music.jpg" alt="musique" />
+                        <div className="audio">
+                            <div className="audio-button" onClick={togglePlay}>
+                                <i className={isPlaying ? "fa-regular fa-pause" : "fa-regular fa-play"} id="audio-button"></i>
+                            </div>
+                            <audio ref={audioRef} id="myJojo">
+                                <source src="audio/jojoref.mp3" type="audio/ogg" />
+                            </audio>
+                        </div>
                         <i className="fa fa-music"></i>
                     </div>
                     <p>Musique</p>

@@ -15,7 +15,7 @@
     height: 30rem;
     border-radius: 50px;
     background-color: var(--random-border-color);
-    box-shadow: 20px -20px 50px rgba(0,0,0,0.35); /* Augmentation de l'ombre pour un effet plus prononcé vers la droite et le haut */
+    box-shadow: 20px -20px 50px rgba(0,0,0,0.35);
 }
 
 .content-img {
@@ -26,11 +26,11 @@
 .content-img::after {
     border: 10px solid var(--random-border-color);
     border-radius: 50px;
-    content: " ";
+    content: "";
     height: 30rem;
-    right: 50px;
+    margin-left: 10rem;
+    margin-bottom: 10rem;
     position: absolute;
-    top: 0px;
     width: 30rem;
     z-index: -1;
 }

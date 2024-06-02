@@ -138,6 +138,12 @@
     }
 }
 
+.interest-circle:hover .audio-button i {
+    display: flex;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
 .interest-box i {
     position: relative;
     overflow: hidden;
@@ -159,4 +165,16 @@
 @keyframes slide {
     0%, 62.5% {transform: rotate(45deg) translateX(-100%);}
     100% {transform: rotate(45deg) translateX(100%);}
+}
+
+.audio-button i {
+    position: absolute;
+    animation: none;
+    background: none;
+    z-index: 1;
+    display: none;
+}
+
+.audio-button i:after {
+    animation: none;
 }
