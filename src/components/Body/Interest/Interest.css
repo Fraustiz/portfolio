@@ -22,8 +22,9 @@
     width: 100%;
     height: 100%;
     opacity: 0.5;
-    display: none;
+    display: flex;
     pointer-events: none;
+    padding: 4rem;
 }
 
 @keyframes shakeAndUp {
@@ -41,8 +42,6 @@
 .menacing {
     animation: shakeAndUp 5s infinite;
 }
-
-
 
 @media (max-width: 767px) {
 
