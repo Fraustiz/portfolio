@@ -41,8 +41,8 @@ export const Nav = () => {
                 <div className="navbar-items">
                     <div className="navbar-icons">
                         <ul>
-                            <li><a href="https://github.com/" target="_blank"><i className="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in//" target="_blank"><i className="fa-brands fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/Fraustiz" target="_blank"><i className="fa-brands fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/drevon-jules/" target="_blank"><i className="fa-brands fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                     <div className="hamburger-icon">
