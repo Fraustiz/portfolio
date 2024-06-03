@@ -45,6 +45,7 @@
 
 
 @media (max-width: 767px) {
+
     .interest-content {
         display: flex;
         flex-wrap: wrap;

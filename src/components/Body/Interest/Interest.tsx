@@ -35,16 +35,25 @@ export const Interest = () => {
 
     useEffect(() => {
         const menacingElement = document.querySelector('.menacing') as HTMLElement;
+        const mobileNoElement = document.getElementById('mobile-no') as HTMLElement;
         if (menacingElement) {
-            menacingElement.style.display = isPlaying ? 'flex' : 'none';
+            if (window.innerWidth <= 767) {
+                menacingElement.style.display = isPlaying ? 'flex' : 'none';
+                mobileNoElement.style.display = 'none';
+            }
+            if (window.innerWidth > 767) {
+                menacingElement.style.display = isPlaying ? 'flex' : 'none';
+            }
         }
     }, [isPlaying]);
+
+    
 
     return (
         <div className="interest">
             <div className='menacing'>
                 <img src="./images/menacing.png" alt="Menacing" />
-                <img src="./images/menacing.png" alt="Menacing" />
+                <img src="./images/menacing.png" alt="Menacing" id='mobile-no'/>
             </div>
             <div className="title">
                 <h1><i className="fa-solid fa-dungeon"></i></h1>
