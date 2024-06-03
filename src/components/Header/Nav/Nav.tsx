@@ -1,13 +1,13 @@
 import "./Nav.css"
 import React, { useEffect } from 'react';
 
-
 export const Nav = () => {
 
     const handleLinkClick = () => {
         const checkbox = document.getElementById('toggle-menu') as HTMLInputElement;
         if (checkbox) {
             checkbox.checked = false;
+            checkbox.dispatchEvent(new Event('change'));
         }
     }
 
