@@ -19,14 +19,33 @@ export const Interest = () => {
         }
     };
 
+    const handleMouseLeave = () => {
+        const audio = audioRef.current;
+        if (audio && !audio.paused) {
+            audio.pause();
+            setIsPlaying(false);
+        }
+    };
+
     useEffect(() => {
         if (audioRef.current) {
             audioRef.current.volume = 0.5;
         }
     }, []);
 
+    useEffect(() => {
+        const menacingElement = document.querySelector('.menacing') as HTMLElement;
+        if (menacingElement) {
+            menacingElement.style.display = isPlaying ? 'flex' : 'none';
+        }
+    }, [isPlaying]);
+
     return (
         <div className="interest">
+            <div className='menacing'>
+                <img src="./images/menacing.png" alt="Menacing" />
+                <img src="./images/menacing.png" alt="Menacing" />
+            </div>
             <div className="title">
                 <h1><i className="fa-solid fa-dungeon"></i></h1>
                 <h2>Centres d'intérêts</h2>
@@ -46,7 +65,7 @@ export const Interest = () => {
                     </div>
                     <p>Sport</p>
                 </div>
-                <div className="interest-box" id="music">
+                <div className="interest-box" id="music" onMouseLeave={handleMouseLeave}>
                     <div className="interest-circle">
                         <img src="./images/music.jpg" alt="musique" />
                         <div className="audio">
