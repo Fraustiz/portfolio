@@ -1,6 +1,20 @@
 import './Knowledge.css';
+import { useEffect } from 'react';
+
 
 export const Knowledge = () => {
+
+    useEffect(() => {
+        const items = document.querySelectorAll('.marquee .marquee-item');
+        const itemCount = items.length;
+
+        items.forEach((item, index) => {
+            (item as HTMLElement).style.setProperty('--marquee-item-index', (index + 1).toString());
+        });
+
+        document.documentElement.style.setProperty('--marquee-items', itemCount.toString());
+    }, []);
+
     return (
         <div className="knowledge">
             <div className="title">

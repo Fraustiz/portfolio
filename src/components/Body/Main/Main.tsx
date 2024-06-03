@@ -13,7 +13,7 @@ export const Main = () => {
           autoStart: true,
           deleteSpeed: 100,
       });
-      app.insertAdjacentHTML('beforeend', `<span>Jules Drevon</span>`);
+      app.insertAdjacentHTML('beforeend', `<span>Mon nom</span>`);
 
       const phrases = [
           { text: "Je suis", deleteCount: 7 },
