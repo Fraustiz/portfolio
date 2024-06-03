@@ -37,12 +37,15 @@ export const Interest = () => {
         const menacingElement = document.querySelector('.menacing') as HTMLElement;
         const mobileNoElement = document.getElementById('mobile-no') as HTMLElement;
         if (menacingElement) {
-            if (window.innerWidth <= 767) {
+            if (window.innerWidth <= 1100) {
                 menacingElement.style.display = isPlaying ? 'flex' : 'none';
+                menacingElement.style.justifyContent = 'center';
                 mobileNoElement.style.display = 'none';
             }
-            if (window.innerWidth > 767) {
+            if (window.innerWidth > 1100) {
                 menacingElement.style.display = isPlaying ? 'flex' : 'none';
+                menacingElement.style.justifyContent = 'space-between'
+                mobileNoElement.style.display = isPlaying ? 'flex' : 'none';
             }
         }
     }, [isPlaying]);
