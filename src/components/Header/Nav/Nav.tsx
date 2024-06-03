@@ -1,5 +1,5 @@
 import "./Nav.css"
-import React from 'react';
+import React, { useEffect } from 'react';
 
 
 export const Nav = () => {
@@ -12,10 +12,28 @@ export const Nav = () => {
     }
 
     const handleMenuBackgroundClick = (event: React.MouseEvent<HTMLUListElement, MouseEvent>) => {
-    if (event.target === event.currentTarget) {
-        event.preventDefault();
+        if (event.target === event.currentTarget) {
+            event.preventDefault();
+        }
     }
-}
+
+    useEffect(() => {
+        const body = document.body;
+        const checkbox = document.getElementById('toggle-menu') as HTMLInputElement;
+        const toggleScroll = () => {
+            if (checkbox.checked) {
+                body.style.overflow = 'hidden';
+            } else {
+                body.style.overflow = 'auto';
+            }
+        };
+
+        checkbox.addEventListener('change', toggleScroll);
+
+        return () => {
+            checkbox.removeEventListener('change', toggleScroll);
+        };
+    }, []);
 
     return (
         <div className="navbar">
