@@ -5,7 +5,7 @@ export const Knowledge = () => {
         <div className="knowledge">
             <div className="title">
                 <h1><i className="fa-solid fa-code"></i></h1>
-                <h2>connaissances</h2>
+                <h2>Maîtrise</h2>
             </div>
             <div className="marquee">
                 <img className="marquee-item" src="./svgs/coding/html5.svg" alt="HTML5"/>
