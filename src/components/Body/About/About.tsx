@@ -29,7 +29,7 @@ export const About = () => {
                                 <li><span>Nom: </span> Mon nom</li>
                                 <li><span>Date de naissance: </span> 24 Août 2003</li>
                                 <li><span>Ville: </span> Lyon (69009)</li>
-                                <li><span>Téléphone: </span> <a href="tel:+33642270026">Mon tel</a></li>
+                                <li><span>Téléphone: </span> <a href="tel:+tel">Mon tel</a></li>
                                 <li><span>E-Mail: </span> <a href="mailto:email@gmail.com">email@gmail.com</a></li>
                             </ul>
                         </div>
