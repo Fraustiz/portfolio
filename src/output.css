@@ -808,16 +808,8 @@ video {
   pointer-events: none;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
-}
-
-.relative {
-  position: relative;
 }
 
 .-inset-\[10px\] {
@@ -832,12 +824,12 @@ video {
   display: flex;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
+.hidden {
+  display: none;
 }
 
-.w-\[100vh\] {
-  width: 100vh;
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .flex-col {
@@ -879,8 +871,104 @@ video {
   will-change: transform;
 }
 
-.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--blue-500\)_10\%\2c var\(--indigo-300\)_15\%\2c var\(--blue-300\)_20\%\2c var\(--violet-200\)_25\%\2c var\(--blue-400\)_30\%\)\] {
-  --aurora: repeating-linear-gradient(100deg,var(--blue-500) 10%,var(--indigo-300) 15%,var(--blue-300) 20%,var(--violet-200) 25%,var(--blue-400) 30%);
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(---500\)_10\%\2c var\(---500\)_15\%\2c var\(---500\)_20\%\2c var\(---500\)_25\%\2c var\(---500\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(---500) 10%,var(---500) 15%,var(---500) 20%,var(---500) 25%,var(---500) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--emerald-500\)_10\%\2c var\(--emerald-500\)_15\%\2c var\(--emerald-500\)_20\%\2c var\(--emerald-500\)_25\%\2c var\(--emerald-500\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--emerald-500) 10%,var(--emerald-500) 15%,var(--emerald-500) 20%,var(--emerald-500) 25%,var(--emerald-500) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--green-100\)_10\%\2c var\(--green-100\)_15\%\2c var\(--green-100\)_20\%\2c var\(--green-100\)_25\%\2c var\(--green-100\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--green-100) 10%,var(--green-100) 15%,var(--green-100) 20%,var(--green-100) 25%,var(--green-100) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--green-400\)_10\%\2c var\(--green-400\)_15\%\2c var\(--green-400\)_20\%\2c var\(--green-400\)_25\%\2c var\(--green-400\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--green-400) 10%,var(--green-400) 15%,var(--green-400) 20%,var(--green-400) 25%,var(--green-400) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--green-50\)_10\%\2c var\(--green-50\)_15\%\2c var\(--green-50\)_20\%\2c var\(--green-50\)_25\%\2c var\(--green-50\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--green-50) 10%,var(--green-50) 15%,var(--green-50) 20%,var(--green-50) 25%,var(--green-50) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--green-500\)_10\%\2c var\(--emera-300\)_15\%\2c var\(--green-300\)_20\%\2c var\(--teal-200\)_25\%\2c var\(--green-400\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--green-500) 10%,var(--emera-300) 15%,var(--green-300) 20%,var(--teal-200) 25%,var(--green-400) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--green-500\)_10\%\2c var\(--emeral-300\)_15\%\2c var\(--green-300\)_20\%\2c var\(--teal-200\)_25\%\2c var\(--green-400\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--green-500) 10%,var(--emeral-300) 15%,var(--green-300) 20%,var(--teal-200) 25%,var(--green-400) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--green-500\)_10\%\2c var\(--green-300\)_15\%\2c var\(--green-300\)_20\%\2c var\(--green-200\)_25\%\2c var\(--green-100\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--green-500) 10%,var(--green-300) 15%,var(--green-300) 20%,var(--green-200) 25%,var(--green-100) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--green-500\)_10\%\2c var\(--green-300\)_15\%\2c var\(--green-300\)_20\%\2c var\(--green-200\)_25\%\2c var\(--green-400\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--green-500) 10%,var(--green-300) 15%,var(--green-300) 20%,var(--green-200) 25%,var(--green-400) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--green-500\)_10\%\2c var\(--green-300\)_15\%\2c var\(--green-300\)_20\%\2c var\(--teal-200\)_25\%\2c var\(--green-400\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--green-500) 10%,var(--green-300) 15%,var(--green-300) 20%,var(--teal-200) 25%,var(--green-400) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--green-500\)_10\%\2c var\(--green-500\)_15\%\2c var\(--green-500\)_20\%\2c var\(--green-500\)_25\%\2c var\(--green-500\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--green-500) 10%,var(--green-500) 15%,var(--green-500) 20%,var(--green-500) 25%,var(--green-500) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--green-600\)_10\%\2c var\(--green-600\)_15\%\2c var\(--green-600\)_20\%\2c var\(--green-600\)_25\%\2c var\(--green-600\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--green-600) 10%,var(--green-600) 15%,var(--green-600) 20%,var(--green-600) 25%,var(--green-600) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--lime-300\)_10\%\2c var\(--lime-300\)_15\%\2c var\(--lime-300\)_20\%\2c var\(--lime-300\)_25\%\2c var\(--lime-300\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--lime-300) 10%,var(--lime-300) 15%,var(--lime-300) 20%,var(--lime-300) 25%,var(--lime-300) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--lime-400\)_10\%\2c var\(--lime-300\)_15\%\2c var\(--lime-400\)_20\%\2c var\(--lime-100\)_25\%\2c var\(--lime-400\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--lime-400) 10%,var(--lime-300) 15%,var(--lime-400) 20%,var(--lime-100) 25%,var(--lime-400) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--lime-400\)_10\%\2c var\(--lime-400\)_15\%\2c var\(--lime-400\)_20\%\2c var\(--lime-100\)_25\%\2c var\(--lime-400\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--lime-400) 10%,var(--lime-400) 15%,var(--lime-400) 20%,var(--lime-100) 25%,var(--lime-400) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--lime-400\)_10\%\2c var\(--lime-400\)_15\%\2c var\(--lime-400\)_20\%\2c var\(--lime-400\)_25\%\2c var\(--lime-400\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--lime-400) 10%,var(--lime-400) 15%,var(--lime-400) 20%,var(--lime-400) 25%,var(--lime-400) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--lime-500\)_10\%\2c var\(--lime-500\)_15\%\2c var\(--lime-500\)_20\%\2c var\(--lime-500\)_25\%\2c var\(--lime-500\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--lime-500) 10%,var(--lime-500) 15%,var(--lime-500) 20%,var(--lime-500) 25%,var(--lime-500) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--lime-600\)_10\%\2c var\(--lime-300\)_15\%\2c var\(--green-200\)_20\%\2c var\(--lime-100\)_25\%\2c var\(--lime-400\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--lime-600) 10%,var(--lime-300) 15%,var(--green-200) 20%,var(--lime-100) 25%,var(--lime-400) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--lime-600\)_10\%\2c var\(--lime-300\)_15\%\2c var\(--green-400\)_20\%\2c var\(--lime-100\)_25\%\2c var\(--lime-400\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--lime-600) 10%,var(--lime-300) 15%,var(--green-400) 20%,var(--lime-100) 25%,var(--lime-400) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--lime-600\)_10\%\2c var\(--lime-300\)_15\%\2c var\(--lime-400\)_20\%\2c var\(--lime-100\)_25\%\2c var\(--lime-400\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--lime-600) 10%,var(--lime-300) 15%,var(--lime-400) 20%,var(--lime-100) 25%,var(--lime-400) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--teal-\)_10\%\2c var\(--teal-\)_15\%\2c var\(--teal-\)_20\%\2c var\(--teal-\)_25\%\2c var\(--teal-\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--teal-) 10%,var(--teal-) 15%,var(--teal-) 20%,var(--teal-) 25%,var(--teal-) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--teal-100\)_10\%\2c var\(--teal-100\)_15\%\2c var\(--teal-100\)_20\%\2c var\(--teal-100\)_25\%\2c var\(--teal-100\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--teal-100) 10%,var(--teal-100) 15%,var(--teal-100) 20%,var(--teal-100) 25%,var(--teal-100) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--teal-300\)_10\%\2c var\(--teal-300\)_15\%\2c var\(--teal-300\)_20\%\2c var\(--teal-300\)_25\%\2c var\(--teal-300\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--teal-300) 10%,var(--teal-300) 15%,var(--teal-300) 20%,var(--teal-300) 25%,var(--teal-300) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--teal-500\)_10\%\2c var\(--teal-500\)_15\%\2c var\(--teal-500\)_20\%\2c var\(--teal-500\)_25\%\2c var\(--teal-500\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--teal-500) 10%,var(--teal-500) 15%,var(--teal-500) 20%,var(--teal-500) 25%,var(--teal-500) 30%);
+}
+
+.\[--aurora\:repeating-linear-gradient\(100deg\2c var\(--teal-700\)_10\%\2c var\(--teal-700\)_15\%\2c var\(--teal-700\)_20\%\2c var\(--teal-700\)_25\%\2c var\(--teal-700\)_30\%\)\] {
+  --aurora: repeating-linear-gradient(100deg,var(--teal-700) 10%,var(--teal-700) 15%,var(--teal-700) 20%,var(--teal-700) 25%,var(--teal-700) 30%);
 }
 
 .\[--dark-gradient\:repeating-linear-gradient\(100deg\2c var\(--black\)_0\%\2c var\(--black\)_7\%\2c var\(--transparent\)_10\%\2c var\(--transparent\)_12\%\2c var\(--black\)_16\%\)\] {
