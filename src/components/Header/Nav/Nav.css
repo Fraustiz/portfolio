@@ -8,6 +8,7 @@
     background: var(--purple);;
     left: 0;
     z-index: 999;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);;
 }
 
 .navbar ul li, .navbar ul {
@@ -33,7 +34,6 @@
 }
 
 .navbar-icons {
-    width: 25%;
     display: flex;
     justify-content: space-between;
     align-items: center;

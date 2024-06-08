@@ -56,10 +56,10 @@ export const Nav = () => {
                                 <ul onClick={handleMenuBackgroundClick}>
                                     <li><a href="#main-page" onClick={handleLinkClick}>Accueil</a></li>
                                     <li><a href="#about" onClick={handleLinkClick}>À propos</a></li>
-                                    <li><a href="#studies" onClick={handleLinkClick}>Parcours</a></li>
-                                    <li><a href="#" onClick={handleLinkClick}>Expériences</a></li>
-                                    <li><a href="#" onClick={handleLinkClick}>Portfolio</a></li>
-                                    <li><a href="#" onClick={handleLinkClick}>Contact</a></li>
+                                    <li><a href="#studies" onClick={handleLinkClick}>Études</a></li>
+                                    <li><a href="#jobs" onClick={handleLinkClick}>Expériences</a></li>
+                                    <li><a href="#portfolio" onClick={handleLinkClick}>Portfolio</a></li>
+                                    <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>
                                 </ul>
                             </nav>
                         </label>
