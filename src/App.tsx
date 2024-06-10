@@ -7,6 +7,7 @@ import Interest from './components/Body/Interest/Interest'
 import Knowledge from './components/Body/Knowledge/Knowledge'
 import Studies from './components/Body/Studies/Studies'
 import Jobs from './components/Body/Jobs/Jobs'
+import Portfolio from './components/Body/Portfolio/Portfolio'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Knowledge/>
       <Studies/>
       <Jobs/>
+      <Portfolio/>
     </>
   )
 }
