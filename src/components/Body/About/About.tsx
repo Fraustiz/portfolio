@@ -27,7 +27,7 @@ export const About = () => {
                         <div className="info-profile-container">
                             <ul className="info-profile">
                                 <li><span>Nom: </span> Jules DREVON--VINCENT</li>
-                                <li><span>Date de naissance: </span> 24 Août 2003</li>
+                                <li><span>Date de naissance: </span> 24 août 2003</li>
                                 <li><span>Ville: </span> Lyon (69009)</li>
                                 <li><span>Téléphone: </span> <a href="tel:+33642270026">06 42 27 00 26</a></li>
                                 <li><span>E-Mail: </span> <a href="mailto:jules.drevon@gmail.com">jules.drevon@gmail.com</a></li>

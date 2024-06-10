@@ -35,6 +35,16 @@ export const Nav = () => {
         };
     }, []);
 
+    const handleHover = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        const target = event.currentTarget;
+        if (target) {
+            target.innerHTML = `<i class="fa-solid fa-arrow-turn-down-right"></i> ${target.innerHTML}`;
+        }
+        target.addEventListener('mouseleave', () => {
+            target.innerHTML = target.innerText;
+        });
+    }
+
     return (
         <div className="navbar">
             <div className="navbar-div">
@@ -54,12 +64,12 @@ export const Nav = () => {
                             </svg>
                             <nav className="menu">
                                 <ul onClick={handleMenuBackgroundClick}>
-                                    <li><a href="#main-page" onClick={handleLinkClick}>Accueil</a></li>
-                                    <li><a href="#about" onClick={handleLinkClick}>À propos</a></li>
-                                    <li><a href="#studies" onClick={handleLinkClick}>Études</a></li>
-                                    <li><a href="#jobs" onClick={handleLinkClick}>Expériences</a></li>
-                                    <li><a href="#portfolio" onClick={handleLinkClick}>Portfolio</a></li>
-                                    <li><a href="#contact" onClick={handleLinkClick}>Contact</a></li>
+                                    <li><a href="#main-page" onClick={handleLinkClick} onMouseEnter={handleHover}>Accueil</a></li>
+                                    <li><a href="#about" onClick={handleLinkClick} onMouseEnter={handleHover}>À propos</a></li>
+                                    <li><a href="#studies" onClick={handleLinkClick} onMouseEnter={handleHover}>Études</a></li>
+                                    <li><a href="#jobs" onClick={handleLinkClick} onMouseEnter={handleHover}>Expériences</a></li>
+                                    <li><a href="#portfolio" onClick={handleLinkClick} onMouseEnter={handleHover}>Portfolio</a></li>
+                                    <li><a href="#contact" onClick={handleLinkClick} onMouseEnter={handleHover}>Contact</a></li>
                                 </ul>
                             </nav>
                         </label>

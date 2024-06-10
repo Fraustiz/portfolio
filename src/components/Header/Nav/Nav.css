@@ -128,11 +128,29 @@
 }
 
 @media (min-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .menu ul {
         padding: 2rem;
+        height: 60%;
+        width: 50%;
+        align-items: flex-start;
     }
 
     .menu ul li a {
-        font-size: 3rem;
+        font-size: 5rem;
+    }
+
+    .menu ul li a i {
+        font-size: 4.5rem;
+    }
+
+    .menu ul li a:hover {
+        color: var(--light-purple);
     }
 }

@@ -1,3 +1,19 @@
+.fa-css3-alt {
+    color: #016cb4;
+}
+
+.fa-html5 {
+    color: #e34c26;
+}
+
+.fa-square-js {
+    color: #f1e05a;
+}
+
+.fa-database {
+    color: #dc7939;
+}
+
 .portfolio {
     padding: 5rem;
 }
@@ -15,7 +31,7 @@
     flex-direction: column;
     align-items: flex-start;
     height: 100%;
-    max-width: 600px;
+    max-width: 45%;
     background-color: #362c43;
     border-radius: 20px;
 }
@@ -57,8 +73,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    padding-inline: 3rem;
-    height: 20rem;
+    padding: 2.5rem;
 }
 
 .portfolio-text h3 {
@@ -72,4 +87,46 @@
 
 .portfolio-text p {
     font-size: 2rem;
+}
+
+.portfolio-text .p-bigger {
+    font-size: 3rem;
+}
+
+.portfolio-text p a {
+    text-decoration: underline;
+}
+
+.text-under {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    height: 16rem;
+}
+
+@media only screen and (max-width: 766px) {
+    .portfolio-card {
+        max-width: 100%;
+    }
+
+    .portfolio-text {
+        height: auto;
+        padding: 2rem;
+    }
+
+    .portfolio-text h3 {
+        font-size: 2.5rem;
+    }
+
+    .portfolio-text p {
+        font-size: 1.6rem;
+    }
+
+    .portfolio-text .p-bigger {
+        font-size: 3rem;
+    }
+
+    .text-under {
+        height: 12rem;
+    }
 }

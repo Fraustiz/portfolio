@@ -14,8 +14,11 @@ export const Portfolio = () => {
                     <a href="https://booki.jules-drevon.fr" target='_blank'><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div className="portfolio-text">
-                    <h3><a href="https://booki.jules-drevon.fr" target='_blank'>Booki</a></h3>
-                    <p>Booki est un site de réservation d'hotel, réalisé en exercice pendant ma formation effectuée avec OpenClassrooms.</p>
+                    <div className="text-under">
+                        <h3><a href="https://booki.jules-drevon.fr" target='_blank'>Booki</a></h3>
+                        <p>Booki est un site de réservation d'hotel, réalisé en exercice pendant ma formation effectuée avec OpenClassrooms.</p>
+                    </div>
+                    <p className='p-bigger'><i className="fa-brands fa-html5" title="HTML5"></i> <i className="fa-brands fa-css3-alt" title="CSS3"></i></p>
                 </div>
             </div>
             <div className="portfolio-card">
@@ -24,8 +27,11 @@ export const Portfolio = () => {
                     <a href="https://nina-carducci.jules-drevon.fr" target='_blank'><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div className="portfolio-text">
-                    <h3>Nina Carducci</h3>
-                    <p>Nina Carducci est un site de photographe factice que j'ai du débugger et optimiser pendant un exercice de ma formation OpenClassrooms.</p>
+                    <div className="text-under">
+                        <h3><a href="https://nina-carducci.jules-drevon.fr">Nina Carducci</a></h3>
+                        <p>Nina Carducci est un site de photographe factice que j'ai du débugger et optimiser pendant un exercice de ma formation OpenClassrooms.</p>
+                    </div>
+                    <p className='p-bigger'><i className="fa-brands fa-html5" title="HTML5"></i> <i className="fa-brands fa-css3-alt" title="CSS3"></i> <i className="fa-brands fa-square-js" title="JavaScript"></i></p>
                 </div>
             </div>
             <div className="portfolio-card">
@@ -34,8 +40,11 @@ export const Portfolio = () => {
                     <a href="https://sophie-bluel.jules-drevon.fr" target='_blank'><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div className="portfolio-text">
-                    <h3>Sophie Bluel</h3>
-                    <p>Sophie Bluel est un site d'une Designer d'espace, réalisé en partie durant un exercice pendant ma formation effectuée avec OpenClassrooms.</p>
+                    <div className="text-under">
+                        <h3><a href="https://sophie-bluel.jules-drevon.fr">Sophie Bluel</a></h3>
+                        <p>Sophie Bluel est un site d'une Designer d'espace, réalisé en partie durant un exercice pendant ma formation effectuée avec OpenClassrooms.</p>
+                    </div>
+                    <p className='p-bigger'><i className="fa-brands fa-html5" title="HTML5"></i> <i className="fa-brands fa-css3-alt" title="CSS3"></i> <i className="fa-brands fa-square-js" title="JavaScript"></i> <i className="fa-solid fa-database" title="SQL"></i></p>
                 </div>
             </div>
             <div className="portfolio-card">
@@ -44,8 +53,11 @@ export const Portfolio = () => {
                     <a href="https://qr-code-component-fro.vercel.app" target='_blank'><i className="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <div className="portfolio-text">
-                    <h3>QR Code Component</h3>
-                    <p>QR Code Component est un site vitrine realisé pendant un simple exercice Frontend avec le site <a href="https://frontendmentor.io">Frontend Mentor</a>.</p>
+                    <div className="text-under">
+                        <h3><a href="https://qr-code-component-fro.vercel.app">QR Code Component</a></h3>
+                        <p>QR Code Component est un site vitrine realisé pendant un simple exercice Frontend avec le site <a href="https://frontendmentor.io">Frontend Mentor</a>.</p>
+                    </div>
+                    <p className='p-bigger'><i className="fa-brands fa-html5" title="HTML5"></i> <i className="fa-brands fa-css3-alt" title="CSS3"></i></p>
                 </div>
             </div>
         </div>
