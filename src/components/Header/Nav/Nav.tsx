@@ -1,6 +1,5 @@
 import "./Nav.css"
-import React from 'react';
-
+import React, { useEffect } from 'react';
 
 export const Nav = () => {
 
@@ -8,14 +7,43 @@ export const Nav = () => {
         const checkbox = document.getElementById('toggle-menu') as HTMLInputElement;
         if (checkbox) {
             checkbox.checked = false;
+            checkbox.dispatchEvent(new Event('change'));
         }
     }
 
     const handleMenuBackgroundClick = (event: React.MouseEvent<HTMLUListElement, MouseEvent>) => {
-    if (event.target === event.currentTarget) {
-        event.preventDefault();
+        if (event.target === event.currentTarget) {
+            event.preventDefault();
+        }
     }
-}
+
+    useEffect(() => {
+        const body = document.body;
+        const checkbox = document.getElementById('toggle-menu') as HTMLInputElement;
+        const toggleScroll = () => {
+            if (checkbox.checked) {
+                body.style.overflow = 'hidden';
+            } else {
+                body.style.overflow = 'auto';
+            }
+        };
+
+        checkbox.addEventListener('change', toggleScroll);
+
+        return () => {
+            checkbox.removeEventListener('change', toggleScroll);
+        };
+    }, []);
+
+    const handleHover = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        const target = event.currentTarget;
+        if (target) {
+            target.innerHTML = `<i class="fa-solid fa-arrow-turn-down-right"></i> ${target.innerHTML}`;
+        }
+        target.addEventListener('mouseleave', () => {
+            target.innerHTML = target.innerText;
+        });
+    }
 
     return (
         <div className="navbar">
@@ -36,13 +64,12 @@ export const Nav = () => {
                             </svg>
                             <nav className="menu">
                                 <ul onClick={handleMenuBackgroundClick}>
-                                    <li><a href="#main-page" onClick={handleLinkClick}>Accueil</a></li>
-                                    <li><a href="#about" onClick={handleLinkClick}>À propos</a></li>
-                                    <li><a href="#" onClick={handleLinkClick}>Parcours</a></li>
-                                    <li><a href="#" onClick={handleLinkClick}>Expériences</a></li>
-                                    <li><a href="#" onClick={handleLinkClick}>Contact</a></li>
-                                    <li><a href="#" onClick={handleLinkClick}>Langages</a></li>
-                                    <li><a href="#" onClick={handleLinkClick}>Portfolio</a></li>
+                                    <li><a href="#main-page" onClick={handleLinkClick} onMouseEnter={handleHover}>Accueil</a></li>
+                                    <li><a href="#about" onClick={handleLinkClick} onMouseEnter={handleHover}>À propos</a></li>
+                                    <li><a href="#studies" onClick={handleLinkClick} onMouseEnter={handleHover}>Études</a></li>
+                                    <li><a href="#jobs" onClick={handleLinkClick} onMouseEnter={handleHover}>Expériences</a></li>
+                                    <li><a href="#portfolio" onClick={handleLinkClick} onMouseEnter={handleHover}>Portfolio</a></li>
+                                    <li><a href="#contact" onClick={handleLinkClick} onMouseEnter={handleHover}>Contact</a></li>
                                 </ul>
                             </nav>
                         </label>
