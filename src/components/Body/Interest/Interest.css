@@ -167,12 +167,12 @@
         font-size: 2rem;
         transition: transform 0.5s ease;
     }
-}
-
-.interest-circle:hover .audio-button i {
-    display: flex;
-    opacity: 0.5;
-    cursor: pointer;
+    
+    .interest-circle:hover .audio-button i {
+        display: flex;
+        opacity: 0.5;
+        cursor: pointer;
+    }
 }
 
 .interest-box i {

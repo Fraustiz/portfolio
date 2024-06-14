@@ -154,3 +154,21 @@
         color: var(--light-purple);
     }
 }
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
