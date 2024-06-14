@@ -10,16 +10,16 @@ export const Contact = () => {
             <div className="contact-form">
                 <form action="submit" method="post">
                     <div className="input-group">
-                        <input required={true} type="text" name="text" autoComplete="off" className="input"/>
-                        <label className="user-label">Nom</label>
+                        <input required={true} type="text" name="text" autoComplete="off" className="input" placeholder="Nom"/>
+                        <label className="user-label"><i className="fa-regular fa-user"></i></label>
                     </div>
                     <div className="input-group">
-                        <input required={true} type="text" name="text" autoComplete="off" className="input"/>
-                        <label className="user-label">E-mail</label>
+                        <input required={true} type="text" name="text" autoComplete="off" className="input" placeholder="E-mail"/>
+                        <label className="user-label"><i className="fa-regular fa-envelope"></i></label>
                     </div>
                     <div className="input-group">
-                        <input required={true} type="text" name="text" autoComplete="off" className="input"/>
-                        <label className="user-label">Message</label>
+                        <textarea required={true} name="text" autoComplete="off" className="input" placeholder="Message"/>
+                        <label className="user-label"><i className="fa-regular fa-message"></i></label>
                     </div>
                     <div className="input-group">
                         <button>

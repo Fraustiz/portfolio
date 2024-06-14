@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    padding-bottom: 20rem;
 }
 
 .contact-form {
@@ -27,6 +28,34 @@
     position: relative;
     width: 100%;
     margin-bottom: 3rem;
+}
+
+.input-group input, .input-group textarea {
+    font-size: 1.5rem;
+    padding-left: 3.5rem;
+    animation: un-slide 0.3s ease;
+}
+
+@keyframes un-slide {
+    0% { padding-left: 1.5rem; }
+    100% { padding-left: 3.5rem; }
+}
+
+.input-group input:valid, .input-group input:focus, .input-group textarea:valid, .input-group textarea:focus {
+    animation: slide 0.3s ease;
+    padding-left: 1.5rem;
+}
+
+@keyframes slide {
+    0% { padding-left: 3.5rem; }
+    100% { padding-left: 1.5rem; }
+}
+
+
+.input-group textarea {
+    height: 15rem;
+    max-height: 40rem;
+    min-height: 5rem;
 }
 
 .input-group button {
@@ -55,14 +84,14 @@
     font-size: 1.5rem;
 }
 
-.input:focus, input:valid {
+.input:focus, input:valid, textarea:valid {
     outline: none;
     border: 1.5px solid var(--light-purple);
 }
 
-.input:focus ~ label, input:valid ~ label {
+.input:focus ~ label, input:valid ~ label, textarea:valid ~ label {
     transform: translateY(-50%) scale(0.8);
-    background-color: #212121;
+    background-color: #29292b;
     padding: 0 .2em;
     color: var(--light-purple);
 }
