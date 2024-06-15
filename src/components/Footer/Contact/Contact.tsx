@@ -1,9 +1,8 @@
 import "./Contact.css"
-import apiKey from 'api-key';
 import { Resend } from 'resend';
 
 export const Contact = () => {
-    const resend = new Resend(apiKey);
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     (async function () {
         const { data, error } = await resend.emails.send({
