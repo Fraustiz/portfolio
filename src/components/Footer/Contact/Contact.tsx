@@ -1,6 +1,24 @@
 import "./Contact.css"
+import apiKey from 'api-key';
+import { Resend } from 'resend';
 
 export const Contact = () => {
+    const resend = new Resend(apiKey);
+
+    (async function () {
+        const { data, error } = await resend.emails.send({
+            from: 'Acme <onboarding@resend.dev>',
+            to: ['delivered@resend.dev'],
+            subject: 'Hello World',
+            html: '<strong>It works!</strong>',
+        });
+
+        if (error) {
+            console.error('Error:', error);
+        } else {
+            console.log('Email sent successfully:', data);
+        }
+    })();
     return (
         <div className="contact" id="contact">
             <div className="title">

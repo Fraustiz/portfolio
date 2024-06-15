@@ -60,7 +60,7 @@
 }
 
 .portfolio-image:hover img {
-    filter: grayscale(100%) opacity(25%);
+    filter: opacity(50%);
 }
 
 .portfolio-image:hover a {

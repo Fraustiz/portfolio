@@ -22,7 +22,7 @@
     --marquee-duration: 100s;
 }
 
-    .marquee-item {
+.marquee-item {
     --marquee-item-offset: max(
         calc(var(--marquee-item-width) * var(--marquee-items) + 50px * (var(--marquee-items) - 1)),
         calc(100% + var(--marquee-item-width) + 50px)
@@ -35,6 +35,16 @@
     inset-inline-start: var(--marquee-item-offset);
     transform: translateX(-50%);
     animation: go linear var(--marquee-duration) var(--marquee-delay, 0s) infinite;
+}
+
+.marquee-item img {
+    width: 120px;
+    height: 120px;
+}
+
+/* Pause all items when any item is hovered */
+.marquee:hover .marquee-item {
+    animation-play-state: paused;
 }
 
 @keyframes go {
