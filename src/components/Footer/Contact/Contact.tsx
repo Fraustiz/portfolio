@@ -1,9 +1,6 @@
 import "./Contact.css";
 
 export const Contact = () => {
-    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-    };
 
     return (
         <div className="contact" id="contact">
@@ -12,7 +9,7 @@ export const Contact = () => {
                 <h2>contact</h2>
             </div>
             <div className="contact-form">
-                <form action="submit" method="post" onSubmit={handleSubmit}>
+                <form action="submit" method="post" >
                     <div className="input-group">
                         <input required={true} type="text" name="name" className="input" placeholder="Nom"/>
                         <label className="user-label"><i className="fa-regular fa-user"></i></label>
