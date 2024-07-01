@@ -10,8 +10,10 @@ export const Interest = () => {
         const audio = audioRef.current;
         if (audio) {
             if (audio.paused) {
-                audio.play();
-                setIsPlaying(true);
+                if (window.confirm('Ceci est un secret, une musique va se jouer.')) {
+                    audio.play();
+                    setIsPlaying(true);
+                }
             } else {
                 audio.pause();
                 setIsPlaying(false);

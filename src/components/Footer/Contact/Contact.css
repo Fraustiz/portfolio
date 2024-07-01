@@ -21,6 +21,16 @@
     gap: 2rem;
 }
 
+@media (max-width: 768px) {
+    .contact-form form {
+        width: 100%;
+    }
+
+    .contact {
+        padding-inline: 4rem;
+    }
+}
+
 .input-group {
     display: flex;
     flex-direction: column;

@@ -38,8 +38,10 @@ export const Nav = () => {
     const handleHover = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
         const target = event.currentTarget as HTMLAnchorElement;
         if (target) {
-            target.innerHTML = `<i class="fa-solid fa-arrow-turn-down-right" style="animation: slideFromLeft 0.5s forwards, fadeIn 0.5s ease-in-out forwards"></i> ${target.innerHTML}`;
-            target.style.transform = `translateX(-6.7rem)`;
+            if (window.innerWidth >= 768) {
+                target.innerHTML = `<i class="fa-solid fa-arrow-turn-down-right" style="animation: slideFromLeft 0.5s forwards, fadeIn 0.5s ease-in-out forwards"></i> ${target.innerHTML}`;
+                target.style.transform = `translateX(-6.7rem)`;
+            }
         }
         target.addEventListener('mouseleave', () => {
             target.style.transform = `translateX(0)`;
